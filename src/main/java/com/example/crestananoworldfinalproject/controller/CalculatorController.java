@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin
 public class CalculatorController {
     @Autowired
     private CalculatorRepository calculatorRepository;
