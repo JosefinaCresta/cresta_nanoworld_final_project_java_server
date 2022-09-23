@@ -1,5 +1,6 @@
-package com.example.crestananoworldfinalproject.controller;
+package com.example.crestananoworldfinalproject.controllerUserTry;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,11 +9,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Data
-@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "users")
+@NoArgsConstructor
 public class User {
     @Id
-    private Integer userId;
+    private String userId;
     private String name;
 }
